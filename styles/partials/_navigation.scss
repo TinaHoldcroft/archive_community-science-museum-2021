@@ -9,7 +9,6 @@
         text-shadow: 5px 5px 5px #d6e1ef99, 0 0 0 #000, 5px 5px 5px #d6e1ef00;
         color: rgba(234, 76, 137, 0.8);
         font-size: 5em;
-        transform: rotate(-35deg);
     }
 }
 .logo-txt {
@@ -26,83 +25,16 @@
        font-size: 2.5em;
     }
 }
-
 nav {
-    height: 4.6rem;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    width: 100vw;
-}
-.nav-links {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
-    width: 50%;
-    height: 100%;
-    list-style: none;
-}
-.nav-links li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-.line {
-    width: 30px;
-    height: 3px;
-    background: #ffffff;
-    margin: 5px;
-}
-.hamburger {
-    position: absolute;
-    cursor: pointer;
-    top: 3rem;
-    right: 2rem;
-    transform: translate(-5%, -50%);
-    z-index: 11;
-}
-.nav-links {
-    position: fixed;
-    background: #EA4C89;
-    height: 135vh;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
-    transition: all 0.3s ease-out;
-    pointer-events: none;
-    justify-content: flex-start;
-    z-index: 9;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin: 1rem;
     a {
-        padding-left: 30vw;
+        color: #000000;
+        text-decoration: none;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 0.8em;
     }
-}
-.nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-    pointer-events: all;
-}
-.nav-links li { 
-    margin: 2rem;
-    opacity: 0;
-}
-.nav-links li:nth-child(1) { 
-    transition: all 0.5s ease 0.2s; 
-    margin-top: 6rem;
-}
-.nav-links li:nth-child(2) { transition: all 0.5s ease 0.4s; }
-.nav-links li:nth-child(3) { transition: all 0.5s ease 0.6s; }
-li.fade { opacity: 1; }
-
-
-.circle {
-    position: absolute;
-    height: 4rem;
-    width: 4rem;
-    top: 1rem;
-    right: 0.4rem;
-    background: #EA4C89;
-    border-radius: 50%;
-    box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.15), inset -3px -3px 7px rgba(255, 255, 255, 0.09);
 }

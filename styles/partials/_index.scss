@@ -1,9 +1,3 @@
-#index {
-    img {
-        width: 30vw;
-        margin-top: 10rem;
-    }
-}
 .index-container {
     position: absolute;
     top: 50vh;
@@ -14,20 +8,17 @@
     align-items: center;
     justify-items: center;
     padding: 5rem;
-    div {
-        flex:1;
-    }
 }
 .btns-wrapper {
     position: absolute;
     top: 50vh;
-    margin-top: -12rem;
+    margin-top: -32rem;
     left: 50vw;
-    margin-left: 28rem;
+    margin-left: -8rem;
     display: grid;
     grid-auto-flow: column;
-    gap: 2rem;
-    transform: scale(3);
+    gap: 1rem;
+    transform: scale(2);
     background-color: #D4E0ED;
     padding: 1rem;
 }
@@ -70,11 +61,35 @@ a:hover {
 }
 iframe {
     position: absolute;
-    top: 100vh;
+    top: 150vh;
     left: 40vw;
     width: 50vw;
     height: 50vh;
     border: 0;
     box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
     border-radius: 18px;
+}
+
+
+//-------re-name!!!!!!!!!
+.pink {
+    height: 45vw;
+    width: 45vw;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: -1;
+    border-radius: 50%;
+   // background:  #ea4c89;
+    box-shadow: inset 3px 3px 7px #d6e1ef99, inset -3px -3px 7px #d6e1ef00, 4px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
+}
+.pink-wrapper {
+    height: 55vw;
+    width: 55vw;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
 }
