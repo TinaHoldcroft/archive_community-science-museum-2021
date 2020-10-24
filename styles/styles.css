@@ -15,12 +15,10 @@ body {
 }
 
 .txt-cursive {
-  font-family: charcuterie-cursive, sans-serif;
+  font-family: learning-curve, sans-serif;
 }
 
 .txt-bold {
-  text-transform: uppercase;
-  color: #EA4C89;
   font-weight: 900;
 }
 
@@ -131,18 +129,20 @@ iframe {
 .logo-container i {
   text-shadow: 5px 5px 5px #d6e1ef99, 0 0 0 #000, 5px 5px 5px #d6e1ef00;
   color: rgba(234, 76, 137, 0.8);
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .logo-txt {
   position: absolute;
-  top: 1.6rem;
-  left: 8rem;
+  top: 1.5rem;
+  left: 7rem;
   width: 100%;
 }
 .logo-txt .txt-bold {
   line-height: 1em;
-  font-size: 2.2em;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #EA4C89;
 }
 .logo-txt .txt-cursive {
   line-height: 1em;
