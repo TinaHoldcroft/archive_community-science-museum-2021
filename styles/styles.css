@@ -24,9 +24,8 @@ body {
 
 .index-container {
   position: absolute;
-  top: 50vh;
+  bottom: 0vh;
   left: 0vw;
-  margin-left: -15rem;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -35,11 +34,7 @@ body {
 }
 
 .btns-wrapper {
-  position: absolute;
-  top: 50vh;
-  margin-top: -32rem;
-  left: 50vw;
-  margin-left: -8rem;
+  position: relative;
   display: grid;
   grid-auto-flow: column;
   gap: 1rem;
@@ -96,28 +91,40 @@ iframe {
   border-radius: 18px;
 }
 
-.pink {
-  height: 45vw;
-  width: 45vw;
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  z-index: -1;
-  border-radius: 50%;
-  box-shadow: inset 3px 3px 7px #d6e1ef99, inset -3px -3px 7px #d6e1ef00, 4px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
-.pink-wrapper {
-  height: 55vw;
-  width: 55vw;
-  position: absolute;
-  right: 0;
-  top: 5rem;
-  z-index: -1;
-  border-radius: 50%;
+.popup .popuptext {
+  visibility: hidden;
+  width: 15rem;
+  height: 15rem;
+  background-color: #D4E0ED;
   box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+}
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .logo-container {
   position: absolute;
   top: 1rem;
