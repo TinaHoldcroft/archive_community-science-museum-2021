@@ -93,10 +93,6 @@ nav {
   gap: 2rem;
   margin: 1rem;
 }
-nav i {
-  color: #EA4C89;
-  font-size: 1em;
-}
 nav a {
   color: #000000;
   text-decoration: none;
