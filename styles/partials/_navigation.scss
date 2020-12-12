@@ -14,19 +14,23 @@ nav {
 .SoMe {
     position: absolute;
     bottom: 1rem;
-    left: 1rem;
-    .fa-heart {
+    right: 1rem;
+    .fa-comment {
+        animation-name: float;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
         transition: all .2s ease-in-out;
-        font-size: 1.3em;
+        font-size: 2.5em;
         position: relative;
-        color: rgba(201, 215, 230, 0.562);
-        text-shadow: 4px 4px 4px #d6e1ef99, 0 0 0 #000, 2px 2px 2px #d6e1ef00;
+        color: #FF6759;
     }
 }
 .SoMe.active {
-    .fa-heart {
-        color: rgba(234, 76, 137, 0.8);
-        text-shadow: 2px 2px 2px #d6e1ef99, 0 0 0 #000, 1px 1px 1px #d6e1ef00;
+    .fa-comment {
+        color: rgba(201, 215, 230, 0.562);
+        text-shadow: 4px 4px 4px #d6e1ef99, 0 0 0 #000, 2px 2px 2px #d6e1ef00;
     }
 }
 .popup {
@@ -43,16 +47,22 @@ nav {
         height: 15rem;
         background-color: #D4E0ED;
         box-shadow: -8px -8px 18px 0 rgba(0, 0, 0, 0.55), inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
-        border-radius: 30px;
+        border-radius: 25px;
         position: absolute;
         z-index: 1;
-        bottom: 125%;
-        left: 50%;
+        bottom: 0vh;
+        left: -16.5rem;
         padding: 3rem;
-      }
+    }
     .show {
         visibility: visible;
-        animation: fadeIn 1s;
+        animation: fadeIn 0.8s;
     }
 } 
 @keyframes fadeIn { from { opacity: 0; } to { opacity:1; } }
+@keyframes float {
+    0%   {left:2px; top:2px;}
+    33.3%  {left:0px; top:0px}
+    66.6%  {left:2px; top:2px;}
+    99.9%  {left:0px; top:0px}
+  }
