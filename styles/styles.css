@@ -9,7 +9,7 @@ body {
   background-color: #D4E0ED;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   font-family: montserrat, sans-serif;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 #geometric {
-  height: 47rem;
+  height: 46rem;
   filter: drop-shadow(2px 2px 5px #88a5bf);
 }
 
@@ -52,11 +52,45 @@ body {
   font-size: 1.2em;
 }
 
+.intro-wrapper {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  bottom: 5rem;
+  left: 2rem;
+  width: 22rem;
+}
+.intro-wrapper h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+.intro-wrapper p {
+  margin-bottom: 1rem;
+}
+.intro-wrapper .btn {
+  padding: 0.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #EA4C89;
+  color: #D4E0ED;
+  width: 10rem;
+  cursor: pointer;
+}
+.intro-wrapper .btn:hover {
+  opacity: 0.8;
+}
+.intro-wrapper .btn:active {
+  transform: scale(0.98);
+}
+
 nav {
   display: flex;
   justify-content: flex-start;
-  gap: 3rem;
-  margin: 2rem;
+  gap: 3.5rem;
+  margin-left: 2rem;
+  margin-top: 1.7rem;
 }
 nav a {
   color: #000000;
@@ -64,6 +98,12 @@ nav a {
   text-align: right;
   text-transform: uppercase;
   font-size: 0.8em;
+}
+nav a:hover {
+  transform: scale(1.1);
+}
+nav a:active {
+  opacity: 0.5;
 }
 
 .SoMe {
@@ -84,6 +124,7 @@ nav a {
 }
 
 .SoMe.active .fa-comment {
+  animation: none;
   color: rgba(201, 215, 230, 0.562);
   text-shadow: 4px 4px 4px #d6e1ef99, 0 0 0 #000, 2px 2px 2px #d6e1ef00;
 }
@@ -125,16 +166,16 @@ nav a {
 }
 @keyframes float {
   0% {
-    left: 2px;
-    top: 2px;
+    left: 4px;
+    top: 4px;
   }
   33.3% {
     left: 0px;
     top: 0px;
   }
   66.6% {
-    left: 2px;
-    top: 2px;
+    left: 4px;
+    top: 4px;
   }
   99.9% {
     left: 0px;
