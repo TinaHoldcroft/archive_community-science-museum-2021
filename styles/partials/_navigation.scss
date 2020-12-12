@@ -1,20 +1,8 @@
-.logo-txt {
-    h1 {
-        font-size: 2em;
-        line-height: 1em;
-        text-align: center;
-    }
-    .txt-bold {
-        text-transform: uppercase;
-        color: #EA4C89;
-    }
-    .txt-cursive { font-size: 1.2em; }
-}
 nav {
     display: flex;
     justify-content: flex-start;
-    gap: 2rem;
-    margin: 1rem;
+    gap: 3rem;
+    margin: 2rem;
     a {
         color: #000000;
         text-decoration: none;
@@ -23,3 +11,48 @@ nav {
         font-size: 0.8em;
     }
 }
+.SoMe {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    .fa-heart {
+        transition: all .2s ease-in-out;
+        font-size: 1.3em;
+        position: relative;
+        color: rgba(201, 215, 230, 0.562);
+        text-shadow: 4px 4px 4px #d6e1ef99, 0 0 0 #000, 2px 2px 2px #d6e1ef00;
+    }
+}
+.SoMe.active {
+    .fa-heart {
+        color: rgba(234, 76, 137, 0.8);
+        text-shadow: 2px 2px 2px #d6e1ef99, 0 0 0 #000, 1px 1px 1px #d6e1ef00;
+    }
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .popuptext {
+        visibility: hidden;
+        width: 15rem;
+        height: 15rem;
+        background-color: #D4E0ED;
+        box-shadow: -8px -8px 18px 0 rgba(0, 0, 0, 0.55), inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
+        border-radius: 30px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        padding: 3rem;
+      }
+    .show {
+        visibility: visible;
+        animation: fadeIn 1s;
+    }
+} 
+@keyframes fadeIn { from { opacity: 0; } to { opacity:1; } }

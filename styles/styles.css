@@ -23,19 +23,63 @@ body {
 }
 
 #geometric {
-  height: 60vh;
+  height: 97vh;
   filter: drop-shadow(2px 2px 5px #88a5bf);
 }
 
-.btn i {
+.hero-wrapper {
+  position: absolute;
+  z-index: -9;
+  right: 3rem;
+  bottom: 26.7rem;
+}
+
+.logo-txt {
+  position: relative;
+  margin-top: -32.7rem;
+  margin-left: -31rem;
+}
+.logo-txt h1 {
+  font-size: 3em;
+  line-height: 1em;
+  text-align: center;
+}
+.logo-txt .txt-bold {
+  text-transform: uppercase;
+  color: #EA4C89;
+}
+.logo-txt .txt-cursive {
+  font-size: 1.2em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin: 2rem;
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.SoMe {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+.SoMe .fa-heart {
   transition: all 0.2s ease-in-out;
-  font-size: 2em;
+  font-size: 1.3em;
   position: relative;
   color: rgba(201, 215, 230, 0.562);
   text-shadow: 4px 4px 4px #d6e1ef99, 0 0 0 #000, 2px 2px 2px #d6e1ef00;
 }
 
-.btn.active i {
+.SoMe.active .fa-heart {
   color: rgba(234, 76, 137, 0.8);
   text-shadow: 2px 2px 2px #d6e1ef99, 0 0 0 #000, 1px 1px 1px #d6e1ef00;
 }
@@ -60,6 +104,7 @@ body {
   z-index: 1;
   bottom: 125%;
   left: 50%;
+  padding: 3rem;
 }
 .popup .show {
   visibility: visible;
@@ -73,32 +118,6 @@ body {
   to {
     opacity: 1;
   }
-}
-.logo-txt h1 {
-  font-size: 2em;
-  line-height: 1em;
-  text-align: center;
-}
-.logo-txt .txt-bold {
-  text-transform: uppercase;
-  color: #EA4C89;
-}
-.logo-txt .txt-cursive {
-  font-size: 1.2em;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
-  margin: 1rem;
-}
-nav a {
-  color: #000000;
-  text-decoration: none;
-  text-align: right;
-  text-transform: uppercase;
-  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=styles.css.map */
