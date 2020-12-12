@@ -1,37 +1,24 @@
-.logo-container {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
-    border-radius: 50%;
-    padding: 0.5rem;
-    i {
-        text-shadow: 5px 5px 5px #d6e1ef99, 0 0 0 #000, 5px 5px 5px #d6e1ef00;
-        color: rgba(234, 76, 137, 0.8);
-        font-size: 4em;
-    }
-}
 .logo-txt {
-    position: absolute;
-    top: 1.5rem;
-    left: 7rem;
-    width: 100%;
-    .txt-bold {
-        line-height: 1em;
+    h1 {
         font-size: 2em;
+        line-height: 1em;
+        text-align: center;
+    }
+    .txt-bold {
         text-transform: uppercase;
         color: #EA4C89;
     }
-    .txt-cursive {
-       line-height: 1em;
-       font-size: 2.5em;
-    }
+    .txt-cursive { font-size: 1.2em; }
 }
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 2rem;
     margin: 1rem;
+    i {
+        color: #EA4C89;
+        font-size: 1em;
+    }
     a {
         color: #000000;
         text-decoration: none;
