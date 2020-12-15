@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #D4E0ED;
+  background-color: #F2F2F2;
   width: 100%;
   height: 100%;
   overflow-y: hidden;
@@ -74,7 +74,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   background-color: #EA4C89;
-  color: #D4E0ED;
+  color: #F2F2F2;
   width: 10rem;
   cursor: pointer;
 }
@@ -142,7 +142,7 @@ nav a:active {
   visibility: hidden;
   width: 15rem;
   height: 15rem;
-  background-color: #D4E0ED;
+  background-color: #F2F2F2;
   box-shadow: -8px -8px 18px 0 rgba(0, 0, 0, 0.55), inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
   border-radius: 25px;
   position: absolute;
