@@ -1,5 +1,5 @@
-const btns = document.querySelectorAll('.SoMe');
-for (let btn of btns) { btn.onclick = () => btn.classList.toggle('active'); }
+const btns = document.querySelectorAll('.message-popup');
+for (let btn of btns) { btn.onclick = () => btn.classList.toggle('--active'); }
 function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show"); }
+    var popup = document.getElementById("messagePopup");
+    popup.classList.toggle("--show"); }

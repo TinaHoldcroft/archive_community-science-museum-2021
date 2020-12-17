@@ -14,7 +14,7 @@ nav {
     a:hover { transform: scale(1.1); }
     a:active { opacity: 0.5; }
 }
-.SoMe {
+.message-popup {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
@@ -30,7 +30,7 @@ nav {
         color: #FF6759;
     }
 }
-.SoMe.active {
+.message-popup.--active {
     .fa-comment {
         animation: none;
         color: rgba(201, 215, 230, 0.562);
@@ -58,7 +58,7 @@ nav {
         left: -16.5rem;
         padding: 3rem;
     }
-    .show {
+    .--show {
         visibility: visible;
         animation: fadeIn 0.8s;
     }
