@@ -113,7 +113,7 @@ nav a:active {
   bottom: 1rem;
   right: 1rem;
 }
-.message-popup .fa-comment {
+.message-popup .fa-bell {
   animation-name: float;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -125,7 +125,7 @@ nav a:active {
   color: #FF6759;
 }
 
-.message-popup.--active .fa-comment {
+.message-popup.--active .fa-bell {
   animation: none;
   color: rgba(201, 215, 230, 0.562);
   text-shadow: 4px 4px 4px #d6e1ef99, 0 0 0 #000, 2px 2px 2px #d6e1ef00;
@@ -142,20 +142,34 @@ nav a:active {
 }
 .popup .popuptext {
   visibility: hidden;
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
   background-color: #F2F2F2;
-  box-shadow: -8px -8px 18px 0 rgba(0, 0, 0, 0.55), inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
-  border-radius: 25px;
+  box-shadow: -8px -8px 18px 0 rgba(0, 0, 0, 0.55);
   position: absolute;
   z-index: 1;
   bottom: 0vh;
-  left: -16.5rem;
-  padding: 3rem;
+  left: -22rem;
+  padding: 2rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .popup .--show {
   visibility: visible;
   animation: fadeIn 0.8s;
+}
+.popup h3 {
+  padding-left: 1rem;
+}
+.popup button {
+  background-color: #F2F2F2;
+  padding: 1rem;
+  border: none;
+  text-align: justify;
+  text-align-last: justify;
+}
+.popup button:hover {
+  background-color: #e7e7e7;
 }
 
 @keyframes fadeIn {
