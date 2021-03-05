@@ -14,6 +14,26 @@ nav {
     a:hover { transform: scale(1.1); }
     a:active { opacity: 0.5; }
 }
+/*placeholder hamburger menu*/
+@media only screen and (max-width: 800px) { 
+    nav {
+        display: none;
+    }
+    .fa-bars {
+        display: flex;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        color: $pink;
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .fa-bars { display: none!important; } 
+}
+/*placeholder hamburger menu*/
+
 .message-popup {
     position: absolute;
     bottom: 1rem;
@@ -27,7 +47,7 @@ nav {
         transition: all .2s ease-in-out;
         font-size: 2.5em;
         position: relative;
-        color: #FF6759;
+        color: $orange;
     }
 }
 .message-popup.--active {
@@ -49,7 +69,7 @@ nav {
         visibility: hidden;
         width: 20rem;
         height: 20rem;
-        background-color: #F2F2F2;
+        background-color: $white;
         box-shadow: -8px -8px 18px 0 rgba(0, 0, 0, 0.55);
         position: absolute;
         z-index: 1;
@@ -67,7 +87,7 @@ nav {
         padding-left: 1rem;
     }
     button {
-        background-color: #F2F2F2;
+        background-color: $white;
         padding: 1rem;
         border: none;
         text-align: justify;

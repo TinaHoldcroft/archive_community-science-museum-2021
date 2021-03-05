@@ -23,7 +23,9 @@ body {
 }
 
 #geometric {
-  height: 46rem;
+  max-height: 46rem;
+  height: 95.8vh;
+  max-width: 96vw;
   filter: drop-shadow(2px 2px 5px #88a5bf);
 }
 
@@ -33,20 +35,37 @@ body {
   right: 3rem;
   bottom: 26.7rem;
 }
+@media only screen and (max-width: 800px) {
+  .hero-wrapper {
+    right: 2vw;
+    top: -10rem;
+  }
+}
 
 .logo-txt {
   position: relative;
   margin-top: -32.7rem;
   margin-left: -31rem;
 }
+@media only screen and (max-width: 800px) {
+  .logo-txt {
+    margin-left: -11rem;
+    margin-top: -27rem;
+  }
+}
 .logo-txt h1 {
   font-size: 3em;
   line-height: 1em;
   text-align: center;
 }
+@media only screen and (max-width: 800px) {
+  .logo-txt h1 {
+    font-size: 1.5em;
+  }
+}
 .logo-txt .txt-bold {
   text-transform: uppercase;
-  color: #EA4C89;
+  color: #D90F6D;
 }
 .logo-txt .txt-cursive {
   font-size: 1.2em;
@@ -60,6 +79,12 @@ body {
   bottom: 5rem;
   left: 2rem;
   width: 22rem;
+  max-width: calc(100vw - 2rem);
+}
+@media only screen and (max-width: 800px) {
+  .intro-wrapper {
+    bottom: 3rem;
+  }
 }
 .intro-wrapper h2 {
   font-size: 1.8em;
@@ -74,13 +99,13 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   background-color: transparent;
-  border: 3px solid #EA4C89;
-  color: #EA4C89;
+  border: 3px solid #D90F6D;
+  color: #D90F6D;
   width: 10rem;
   cursor: pointer;
 }
 .intro-wrapper .btn:hover {
-  background-color: #EA4C89;
+  background-color: #D90F6D;
   color: #F2F2F2;
 }
 .intro-wrapper .btn:active {
@@ -108,6 +133,27 @@ nav a:active {
   opacity: 0.5;
 }
 
+/*placeholder hamburger menu*/
+@media only screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  .fa-bars {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #D90F6D;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .fa-bars {
+    display: none !important;
+  }
+}
+/*placeholder hamburger menu*/
 .message-popup {
   position: absolute;
   bottom: 1rem;
